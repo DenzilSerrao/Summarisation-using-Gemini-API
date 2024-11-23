@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+/* App.css */
+.typing-container {
+  font-family: 'Roboto', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange; /* Cursor effect */
+  animation: blink-caret 0.75s step-end infinite, typing 2s steps(40, end);
+}
+.reveal {
+  border-right: 0.15em solid black; /* Adjust cursor style as needed */
+  white-space: pre-wrap; /* Preserve whitespace */
+  overflow: hidden; /* Hide overflow to make typing effect smooth */
+}
+/* Keyframes for typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Keyframes for blinking cursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
 }
