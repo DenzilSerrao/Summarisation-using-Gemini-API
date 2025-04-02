@@ -1,0 +1,28 @@
+|-- client
+    |-- .gitignore
+    |-- package-lock.json
+    |-- package.json
+    |-- public
+        |-- favicon.ico
+        |-- google-gemini-icon.png
+        |-- index.html
+        |-- manifest.json
+        |-- robots.txt
+        |-- style.css
+    |-- src
+        |-- App.css
+        |-- App.js
+        |-- App.test.js
+        |-- google-gemini-icon.png
+        |-- index.css
+        |-- index.js
+        |-- logo.svg
+        |-- reportWebVitals.js
+        |-- setupTests.js
+|-- README.md
+|-- server
+    |-- .env
+    |-- .gitignore
+    |-- package-lock.json
+    |-- package.json
+    |-- server.js
